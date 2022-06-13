@@ -1,0 +1,13 @@
+{
+  "id": 5,
+  "merchantId": 589,
+  "count": 1,
+  "currency": "SEK",
+  "codes": [
+    {
+      "reference": "hello-goodbye",
+      "code": "super-secret",
+      "pin": "1234"
+    }
+  ]
+}
