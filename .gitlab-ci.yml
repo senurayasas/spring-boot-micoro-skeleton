@@ -1,4 +1,0 @@
-include:
-  - project: 'gifted/gitlablib'
-    ref: master
-    file: '.shared-gitlab-ci.yml'
