@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: postal-service
+  datasource:
+    url: ${DATASOURCE-URL}/${DATABASE-NAME}?enabledTLSProtocols=TLSv1.2
+  jpa:
+    open-in-view: false
+    properties:
+      org:
+        hibernate:
+          envers:
+            audit_table_suffix: _history
+            store_data_at_delete: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${gifted.app.platform-base-url}/auth-key/jwk
+  autoconfigure:
+    exclude:
+      - org.springframework.cloud.sleuth.autoconfig.instrument.async.TraceAsyncCustomAutoConfiguration #https://github.com/spring-cloud/spring-cloud-sleuth/issues/2100
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: never
+  servlet:
+    context-path: /code-ws
+
+gifted:
+  security:
+    username: user
+    password: password
+  app:
+    asyncMinPoolSize: 5
+    asyncMaxPoolSize: 10
+
+logging:
+  level:
+    root: INFO
