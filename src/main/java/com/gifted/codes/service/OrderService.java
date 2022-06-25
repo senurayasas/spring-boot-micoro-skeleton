@@ -1,6 +1,6 @@
 package com.gifted.codes.service;
 
-import com.gifted.codes.CodeApplication;
+import com.gifted.codes.TestApplication;
 import com.gifted.codes.model.CodeProvider;
 import com.gifted.codes.model.api.order.OrderRequest;
 import com.gifted.codes.model.api.order.OrderResponse;
@@ -48,7 +48,7 @@ public class OrderService {
 
         final CodeProvider provider = codeProviders.stream()
                 .filter(codeProvider -> codeProvider.canProvide(merchant.getProvider().getImplementation()))
-                .collect(CodeApplication.toSingleton());
+                .collect(TestApplication.toSingleton());
 
 
         provider.provide(orderRequest);

@@ -12,10 +12,10 @@ import java.util.stream.Collectors;
 
 @SpringBootApplication(exclude = {SecurityAutoConfiguration.class, ManagementWebSecurityAutoConfiguration.class})
 @ConfigurationPropertiesScan
-public class CodeApplication implements WebMvcConfigurer {
+public class TestApplication implements WebMvcConfigurer {
 
     public static void main(String[] args) {
-        SpringApplication.run(CodeApplication.class, args);
+        SpringApplication.run(TestApplication.class, args);
     }
 
     //TODO put in gifted-parent

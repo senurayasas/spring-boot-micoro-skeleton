@@ -11,7 +11,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 @WithMockUser("user")
 @AutoConfigureMockMvc
-class CodeApplicationTests extends AbstractDatabaseTest {
+class TestApplicationTests extends AbstractDatabaseTest {
 
     @Autowired
     private MockMvc mockMvc;

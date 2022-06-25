@@ -1,6 +1,6 @@
 spring:
   application:
-    name: postal-service
+    name: test-service
   datasource:
     url: ${DATASOURCE-URL}/${DATABASE-NAME}?enabledTLSProtocols=TLSv1.2
   jpa:
@@ -25,7 +25,7 @@ server:
     include-message: always
     include-binding-errors: never
   servlet:
-    context-path: /code-ws
+    context-path: /test-ws
 
 gifted:
   security:

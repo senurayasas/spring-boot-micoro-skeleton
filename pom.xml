@@ -9,7 +9,7 @@
         <!-- Always check for latest parent -->
     </parent>
 
-    <artifactId>code-service</artifactId>
+    <artifactId>test-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <description>Gifted Codes microservice</description>
 
