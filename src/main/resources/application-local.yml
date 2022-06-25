@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/test_service
+    username: root
+    password: las6r
+
+gifted:
+  app:
+    platform-base-url: http://localhost:8080/coj-api
+  persistence:
+    encryption:
+      secret: this-is-not-very-secret123456789
+  security:
+    enabled: false
